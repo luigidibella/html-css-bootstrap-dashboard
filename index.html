@@ -23,7 +23,7 @@
 
   <!-- header -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary h-70">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary h_70">
       <div class="container-fluid bg-white">
         
         <a class="navbar-brand py-0" href="#">
@@ -69,10 +69,11 @@
   <!-- main -->
   <main>
 
-    <!-- left-sidebar -->
     <div class="container-fluid">
       <div class="row flex-nowrap">
-        <div class="bg-dark col-auto col-md-1 col-lg-2 min-vh-100">
+        
+        <!-- left-sidebar -->
+        <div class="bg-dark col-auto col-lg-2 mw_150 h_c-70 d-flex flex-column justify-content-between">
           <div class="bg-dark p-2">
             <!-- <a class="d-flex text-decoration-none mt-1 align-items-center text-white">
               <span class="fs-4 d-none-d-sm-inline">SideMenu</span>
@@ -95,10 +96,53 @@
               </li>
             </ul>
           </div>
+          
+          <div class="dropdown open mb-4">
+            <button class="btn border-0 text-white" type="button" >
+              <i class="fs-5 fa-solid fa-gear"></i><span class="fs-5 ms-3 d-none d-lg-inline">Admin</span>
+            </button>
+          </div>
         </div>
+        <!-- /left-sidebar -->
+        
+        <!-- content -->
+        <div class="container w_c-150 text-white">
+
+          <!-- jumbotron -->
+          <div class="row bg-primary p-3">
+            <div class="col-6 debug">
+              <h1 class="">Boolean <span class="badge rounded-pill bg_badge fs-6">Piano blaze</span></h1>
+              
+              <span class="d-inline badge rounded-pill bg_badge">3 App</span>
+              <span><i class="fa-solid fa-angles-right"></i></span>
+              
+              <span class="d-inline d-lg-none badge rounded-pill bg_badge">+</span>
+              
+              <span class="d-none d-lg-inline badge rounded-pill bg_badge">Boolean mobile app</span>
+              <span class="d-none d-lg-inline badge rounded-pill bg_badge">Boolean web app</span>
+              <span class="d-none d-lg-inline badge rounded-pill bg_badge">Boolean blog app</span>
+            </div>
+            
+            <div class="col-4 debug">
+              <span>Studenti online negli ultimi 30 minuti</span>
+              <span class="d-block fs-3">125</span>
+            </div>
+            
+            <div class="col-2 debug">
+              <span>Nuovo studente</span>
+              <button class="d-inline btn btn-outline-light ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa-solid fa-plus"></span>
+              </button>
+            </div>
+          </div>
+          <!-- /jumbotron -->
+
+          <div class="row bg-body-secondary"></div>
+        </div>
+        <!-- /content -->
+
       </div>
     </div>
-    <!-- left-sidebar -->
     
   </main>
   <!-- /main -->

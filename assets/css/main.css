@@ -11,12 +11,26 @@ img {
   width: 100%;
 }
 
+
+
 ul li{
   list-style: none;
 }
 
-.h-70 {
+.h_70 {
   height: 70px;
+}
+
+.h_c-70 {
+  height: calc(100vh - 70px);
+}
+
+.mw_150 {
+  max-width: 150px;
+}
+
+.w_c-150 {
+  width: calc(100vw - 150px);
 }
 
 /* HEADER */
@@ -29,4 +43,16 @@ header{
 .m-logo {
   width: 50px;
   height: 50px;
+}
+
+/* JUMBOTRON */
+.bg_badge {
+  background-color: #165bba;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 991px){
+  .w_c-150 {
+    width: calc(100vw - 65.16px);
+  }
 }
