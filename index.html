@@ -23,35 +23,84 @@
 
   <!-- header -->
   <header>
-    <div class="container-fluid py-2 h-100">
-      <div class="row justify-content-center align-items-center h-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary h-70">
+      <div class="container-fluid bg-white">
         
-        <div class="col-2">
-          <div class="logo">
-            <img src="assets/img/logo.svg" alt="">
-          </div>
-        </div>
+        <a class="navbar-brand py-0" href="#">
+          <img src="assets/img/mobile-logo.png" class="d-lg-none m-logo" alt="">
+          <img src="assets/img/logo.svg" class="d-none d-lg-block" alt="">
+        </a>
+        
+        <form class="d-flex flex-grow-1" role="search">
+          <input class="form-control me-2" type="search" placeholder="Prova a Cercare: Lezioni di Lavarel" aria-label="Search">
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+        </form>
 
-        <div class="col-8">
-          <div class="search-bar">
-            <input type="search" placeholder="Prova a cercare: Lezioni di Laravel" class="w-100">
-          </div>
-        </div>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa-solid fa-bell p-1 text-warning"></span>
+        </button>
 
-        <div class="col-2">
-          <div class="options">
-            <ul class="d-flex justify-content-between mb-0">
-              <li><a href=""><i class="fa-solid fa-list-ul"></i></a></li>
-              <li><a href=""><i class="fa-solid fa-circle-question"></i></a></li>
-              <li><a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
-              <li><a href=""><i class="fa-solid fa-bell"></i></a></li>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-list-ul"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-bell text-warning"></i></a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+    
+  </header>
+  <!-- /header -->
+
+  <!-- main -->
+  <main>
+
+    <!-- left-sidebar -->
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="bg-dark col-auto col-md-1 col-lg-2 min-vh-100">
+          <div class="bg-dark p-2">
+            <!-- <a class="d-flex text-decoration-none mt-1 align-items-center text-white">
+              <span class="fs-4 d-none-d-sm-inline">SideMenu</span>
+            </a> -->
+            <ul class="nav nav-pills flex-column mt-4">
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white px-0">
+                  <i class="fs-5 fa-solid fa-house"></i><span class="fs-5 d-none ms-3 d-lg-inline">Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white px-0">
+                  <i class="fs-5 fa-solid fa-chart-simple px-1"></i><span class="fs-5 ms-3 d-none d-lg-inline">Stats</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white px-0">
+                  <i class="fs-5 fa-solid fa-signal"></i><span class="fs-5 ms-3 d-none d-lg-inline">Signals</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-
       </div>
     </div>
-  </header>
-  <!-- /header -->
+    <!-- left-sidebar -->
+    
+  </main>
+  <!-- /main -->
 </body>
 </html>
