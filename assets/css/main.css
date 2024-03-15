@@ -50,6 +50,19 @@ header{
   background-color: #165bba;
 }
 
+/* LEFT-SIDEBAR */
+.bg_image_sidebar{
+  background-image: url(/assets/img/sidebar-bg.png);
+  background-size: cover;
+  background-color: #051e34;
+}
+
+/* NEXT CLASS */
+.class_avatar_img{
+  width: 40px;
+  height: 40px;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 991px){
   .w_c-150 {
