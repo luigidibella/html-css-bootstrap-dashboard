@@ -11,8 +11,6 @@ img {
   width: 100%;
 }
 
-
-
 ul li{
   list-style: none;
 }
@@ -50,11 +48,19 @@ header{
   background-color: #165bba;
 }
 
+.offcanvas_width {
+  width: 100vw !important;
+}
+
 /* LEFT-SIDEBAR */
 .bg_image_sidebar{
   background-image: url(/assets/img/sidebar-bg.png);
   background-size: cover;
   background-color: #051e34;
+}
+
+.btn_sidebar:hover{
+  background-color: rgb(255, 255, 255, 0.3);
 }
 
 /* NEXT CLASS */
@@ -64,6 +70,13 @@ header{
 }
 
 /* RESPONSIVE */
+
+@media screen and (min-width: 769px){
+  .offcanvas_width {
+    width: 60vw !important;
+  }
+}
+
 @media screen and (max-width: 991px){
   .w_c-150 {
     width: calc(100vw - 65.16px);
